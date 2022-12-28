@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import DietThin1 from './pages/DietThin/DietThin1/DietThin1';
+import WelcomePage from './pages/WelcomePage/WelcomePage';
+import DietThin2 from './pages/DietThin/DietThin2/DietThin2';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<WelcomePage/>}/>
+      <Route path='/diet/thin/1' element={<DietThin1/>}/>
+      <Route path='/diet/thin/2' element={<DietThin2/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 

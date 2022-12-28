@@ -1,0 +1,61 @@
+.OneField{
+    display: block;
+}
+.InputDiet{
+    border: 0;
+    border-bottom: 3px solid #398D47;
+    width: 30vw;
+    outline: 0;  
+    transition: 0.2s ease-in-out;
+}
+.InputDiet::placeholder{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 15px;
+}
+.InputDiet:checked{
+    border-bottom: 3px solid #E5900F;
+}
+.InputDietInvalid{
+    border: 0;
+    width: 30vw;
+    outline: 0;  
+    border-bottom: 3px solid #e52c0f; 
+    transition: 0.2s ease-in-out;
+}
+.InputDietInvalid::placeholder{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 15px;
+}
+.OneField input[type="text"]
+{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    
+}
+.TitleInput{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;    
+}
+.FieldErrorText{
+    color: #e52c0f;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+      
+}
