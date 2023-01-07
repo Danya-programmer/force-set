@@ -3,6 +3,7 @@ import Header from '../../../UI/Header/Header';
 import classes from './DietThin1.module.css';
 import { Link } from 'react-router-dom';
 import useInput from '../../../hooks/useInput';
+import NavigationCircles from '../../../UI/NavigationСircles/NavigationCircles';
 
 
 const DietThin = () => {
@@ -60,11 +61,13 @@ const DietThin = () => {
             {(!height.inputValid || !weight.inputValid || !age.inputValid || !genderChoose) ? <button disabled={!height.inputValid || !weight.inputValid || !age.inputValid || !genderChoose}  className={classes.DietButton}>
                 <p className={classes.DietButtonText}>Дальше</p>
             </button> 
-            : <Link to='/diet/thin/2' ><button onClick={SaveResults} className={classes.DietButton}>
+            : <Link to='/survey/2' ><button onClick={SaveResults} className={classes.DietButton}>
                 <p className={classes.DietButtonText}>Дальше</p>
             </button></Link>}
             </section>
             </div>
+
+            <NavigationCircles degree={2}/>
         </div>
     );
     

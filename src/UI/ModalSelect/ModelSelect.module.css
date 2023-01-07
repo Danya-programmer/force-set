@@ -1,0 +1,65 @@
+.ModelSelect{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+    display: none;
+}
+
+.ModelSelectContent{
+    padding: 15px;
+    width: 220px;
+    height: 350px;
+    background-color:rgb(255, 255, 255);
+    overflow-y:scroll;
+    border-radius: 10px;
+}
+
+.ModelSelect.Active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.InputRadio{
+    border: none;
+    width: 86%;
+    height: max-content;
+    margin: 0;
+}
+.OneRadio{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0 30px 0;
+}
+.InputRadioInput{
+    margin: 0 20px 0 0 ;
+}
+input[type="radio"]::after{
+    border-radius: 15px;
+    width: 0.9em;
+    height: 0.9em;
+    background: #ffffff;
+    border: 2px solid #E5900F;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    
+}
+input[type="radio"]:checked::after{
+    width: 0.9em;
+    height: 0.9em;
+    background-color: #E5900F;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #E5900F;
+    
+}

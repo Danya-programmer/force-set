@@ -12,6 +12,18 @@
     justify-content: center;
     transition: 0.5s;
 }
+.GreenButton2{
+    
+    width: 100%;
+    height: 100%;
+    background: #398D47;
+    
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
 .Text{
     font-family: 'Open Sans';
     font-style: normal;
@@ -20,16 +32,29 @@
     line-height: 16px;
     color: white;
 }
+.GreenButton2:hover{
+    transition: 1s;
+    background: #137623;
+}
 .GreenButton:hover{
     transition: 1s;
     background: #137623;
 }
+
 @media (max-device-width: 350px) {
     .GreenButton{
         width: 76vw;
         min-height: 45px;
     }
+    .GreenButton2{
+        width: 76vw;
+        min-height: 45px;
+    }
     .GreenButton:active{
+        transition: 0.3s;
+        background: #137623;
+    }
+    .GreenButton2:active{
         transition: 0.3s;
         background: #137623;
     }
