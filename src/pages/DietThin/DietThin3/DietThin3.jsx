@@ -5,6 +5,7 @@ import classes from './DietThin3.module.css';
 import { Link } from 'react-router-dom';
 import ChooseInput from '../../../UI/ChooseInput/ChooseInput';
 import NavigationCircles from '../../../UI/NavigationСircles/NavigationCircles';
+import backendPost from '../../../server';
 
 
 const DietThin3 = () => {
@@ -14,11 +15,10 @@ const DietThin3 = () => {
         'Капуста',
         'Горох',
         'Свекла',
-        'Помидоры',
+        'Помидор',
         'Огурцы',
         'Болгарский перец',
-        'Лук',
-        
+        'Лук репчатый',
     ]
     const fruits = [
         'Банан',
@@ -29,7 +29,6 @@ const DietThin3 = () => {
         'Вишня',
         'Клубника',
         'Малина',
-
     ]
     const cereals = [
         'Гречка',
@@ -43,7 +42,8 @@ const DietThin3 = () => {
         'Курица',
         'Индейка',
         'Свинина',
-        'Говядина'
+        'Говядина',
+        "Яйца",
     ]
     const [selectedVegetables, setSelectedVegetables] = useState([]);  
     const [selectedFruits, setSelectedFruits] = useState([]); 
@@ -54,6 +54,7 @@ const DietThin3 = () => {
         localStorage.setItem('fruits', JSON.stringify(selectedFruits));
         localStorage.setItem('cereals', JSON.stringify(selectedCereals));
         localStorage.setItem('meat', JSON.stringify(selectedMeat));
+        backendPost();
     }     
     
     const flag = (selectedVegetables.length < 2 || selectedFruits.length < 2 || selectedCereals.length < 2 )
@@ -68,7 +69,7 @@ const DietThin3 = () => {
             {(flag) ? <button disabled={flag}  className={classes.DietButton}>
                 <p className={classes.DietButtonText}>Дальше</p>
             </button> 
-            : <Link to='/survey/1' > <button onClick={SaveResults} className={classes.DietButton}>
+            : <Link to='/survey/3' > <button onClick={SaveResults} className={classes.DietButton}>
                 <p className={classes.DietButtonText}>Дальше</p>
             </button></Link>}
             </div>

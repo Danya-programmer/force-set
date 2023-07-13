@@ -17,6 +17,7 @@ function App() {
       <Route path='/survey/1' element={<DietThin1/>}/>
       <Route path='/survey/2' element={<DietThin2/>}/>
       <Route path='/survey/3' element={<DietThin3/>}/>
+      
     </Routes>
     </BrowserRouter>
   );
