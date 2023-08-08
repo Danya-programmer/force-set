@@ -1,0 +1,62 @@
+.OneDay { 
+    margin: 30px 0 30px 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90vw;
+    transition: box-shadow 0.8s ease;
+}
+
+.InsideOneDay{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.WeekText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 5%;
+    width: 50%;
+}
+
+.OneDaySvg{
+
+    position: relative;
+    display: flex;
+    padding-right: 5%;
+    justify-content: center;
+    transition: transform 0.8s ease;
+    transform-origin: left;
+}
+
+.OneDaySvgActive{
+    transform: rotate(90deg);
+    position: relative;
+    display: flex;
+    padding-right: 5%;
+    justify-content: center;
+    transition: transform 0.8s ease;
+    transform-origin: left;
+    margin: 0 0 10px 0;
+}
+
+.OneDay:hover{
+    box-shadow: 0px 4px 4px 0px rgba(101, 180, 154, 0.347);
+}
+
+.DaysDiet{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.DaysDietNone{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
